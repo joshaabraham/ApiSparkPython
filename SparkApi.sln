@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "SparkApi", "SparkApi.pyproj", "{AB4BDC11-C515-4ED0-BEAE-F45AC889062D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB4BDC11-C515-4ED0-BEAE-F45AC889062D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB4BDC11-C515-4ED0-BEAE-F45AC889062D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB4BDC11-C515-4ED0-BEAE-F45AC889062D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB4BDC11-C515-4ED0-BEAE-F45AC889062D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ED66FD94-D055-42FF-B109-CB683FA6B4A8}
+	EndGlobalSection
+EndGlobal

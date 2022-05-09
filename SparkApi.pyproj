@@ -1,0 +1,313 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>SparkApi</Name>
+    <RootNamespace>SparkApi</RootNamespace>
+    <WebBrowserPort>5000</WebBrowserPort>
+    <TestFramework>Pytest</TestFramework>
+    <InterpreterId>
+    </InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>ab4bdc11-c515-4ed0-beae-f45ac889062d</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>SparkApi.settings</DjangoSettingsModule>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="manage.py" />
+    <Compile Include="SparkApi\__init__.py" />
+    <Compile Include="SparkApi\settings.py" />
+    <Compile Include="SparkApi\urls.py" />
+    <Compile Include="SparkApi\wsgi.py" />
+    <Compile Include="SparkApp\admin.py" />
+    <Compile Include="SparkApp\apps.py" />
+    <Compile Include="SparkApp\controllers\ctrl_Authentication.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\controllers\ctrl_Configuration.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\controllers\ctrl_Profil.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\controllers\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\migrations\__init__.py" />
+    <Compile Include="SparkApp\models.py" />
+    <Compile Include="SparkApp\modelsBo\ActorModels\Auteur\AuteurClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\ActorModels\Club\ClubClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\ActorModels\Ecole\EcoleClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\ActorModels\EntreprisePublicitaire\EntPublicitaireClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\ActorModels\Equipe\EquipeClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\ActorModels\Joueur\JoueurClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\ActorModels\Magasin\MagasinClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\ActorModels\OrganisateurEvenement\OrganisateurEveClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\ActorModels\Reseau\ReseauClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\ActorModels\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\authentication_register.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\configuration.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\ModelsUtilitaires\AdressePostale.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\ModelsUtilitaires\Article.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\ModelsUtilitaires\Calendrier.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\ModelsUtilitaires\GeoCoordinatesClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\ModelsUtilitaires\HashWords.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\ModelsUtilitaires\MediaVideo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\ModelsUtilitaires\NumeroTelephone.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\ModelsUtilitaires\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\profil.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\PublicationsTypes\AlbumPhotoClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\PublicationsTypes\LeconTypes\CourClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\PublicationsTypes\LeconTypes\ChapitreClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\PublicationsTypes\LeconTypes\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\PublicationsTypes\MediaVideoClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\PublicationsTypes\PublicationClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\PublicationsTypes\PubliciteClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\PublicationsTypes\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\sportClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\UserOrientedRelations\CentreInteretClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\UserOrientedRelations\GroupClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\UserOrientedRelations\GroupeDeCommunicationClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\UserOrientedRelations\InvitationClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\UserOrientedRelations\RelationClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\UserOrientedRelations\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\serializers.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\serializers\ActorSerializers\Auteur\Auteur_srl.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\serializers\ActorSerializers\Club\Club_srl.py" />
+    <Compile Include="SparkApp\serializers\ActorSerializers\Ecole\Ecole_srl.py" />
+    <Compile Include="SparkApp\serializers\ActorSerializers\EntreprisePublicitaire\EntPublicitaire_srl.py" />
+    <Compile Include="SparkApp\serializers\ActorSerializers\Equipe\Equipe_srl.py" />
+    <Compile Include="SparkApp\serializers\ActorSerializers\Joueur\Joueur_srl.py" />
+    <Compile Include="SparkApp\serializers\ActorSerializers\Magasin\Magasin_srl.py" />
+    <Compile Include="SparkApp\serializers\ActorSerializers\OrganisateurEvenement\OrganisateurEve_srl.py" />
+    <Compile Include="SparkApp\serializers\ActorSerializers\Reseau\Reseau_srl.py" />
+    <Compile Include="SparkApp\serializers\ActorSerializers\__init__.py" />
+    <Compile Include="SparkApp\serializers\authentication_srl.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\serializers\configuration_srlz.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\serializers\ModelsUtilitaires_srl\GeoCoordinates_srl.py" />
+    <Compile Include="SparkApp\serializers\ModelsUtilitaires_srl\AdressePostale_srl.py" />
+    <Compile Include="SparkApp\serializers\ModelsUtilitaires_srl\Article_srl.py" />
+    <Compile Include="SparkApp\serializers\ModelsUtilitaires_srl\Calendrier_srl.py" />
+    <Compile Include="SparkApp\serializers\ModelsUtilitaires_srl\HashWords_srl.py" />
+    <Compile Include="SparkApp\serializers\ModelsUtilitaires_srl\MediaVideo_srl.py" />
+    <Compile Include="SparkApp\serializers\ModelsUtilitaires_srl\NumeroTelephone_srl.py" />
+    <Compile Include="SparkApp\serializers\ModelsUtilitaires_srl\__init__.py" />
+    <Compile Include="SparkApp\serializers\profil_srlz.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\serializers\PublicationsTypeSerializers\LeconTypes_srl\Chapitre_srl.py" />
+    <Compile Include="SparkApp\serializers\PublicationsTypeSerializers\LeconTypes_srl\Cour_srl.py" />
+    <Compile Include="SparkApp\serializers\PublicationsTypeSerializers\LeconTypes_srl\__init__.py" />
+    <Compile Include="SparkApp\serializers\PublicationsTypeSerializers\Publicite_srl.py" />
+    <Compile Include="SparkApp\serializers\PublicationsTypeSerializers\Publication_srl.py" />
+    <Compile Include="SparkApp\serializers\PublicationsTypeSerializers\MediaVideo_srl.py" />
+    <Compile Include="SparkApp\serializers\PublicationsTypeSerializers\AlbumPhoto_srl.py" />
+    <Compile Include="SparkApp\serializers\PublicationsTypeSerializers\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\serializers\UserOrientedRelations_srl\CentreInteret_srl.py" />
+    <Compile Include="SparkApp\serializers\UserOrientedRelations_srl\Group_srl.py" />
+    <Compile Include="SparkApp\serializers\UserOrientedRelations_srl\GroupeDeCommunication_srl.py" />
+    <Compile Include="SparkApp\serializers\UserOrientedRelations_srl\Invitation_srl.py" />
+    <Compile Include="SparkApp\serializers\UserOrientedRelations_srl\Relation_srl.py" />
+    <Compile Include="SparkApp\serializers\UserOrientedRelations_srl\__init__.py" />
+    <Compile Include="SparkApp\serializers\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\tests.py" />
+    <Compile Include="SparkApp\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\utilsFonctions\UUIDGenerateur.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\views.py" />
+    <Compile Include="SparkApp\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="requirements.txt" />
+    <Content Include="SparkApp\templates\SparkApp\index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SparkApi\" />
+    <Folder Include="SparkApp\" />
+    <Folder Include="SparkApp\migrations\" />
+    <Folder Include="SparkApp\controllers\" />
+    <Folder Include="SparkApp\modelsBo\ActorModels\" />
+    <Folder Include="SparkApp\modelsBo\ActorModels\Club\" />
+    <Folder Include="SparkApp\modelsBo\ActorModels\Magasin\" />
+    <Folder Include="SparkApp\modelsBo\ActorModels\EntreprisePublicitaire\" />
+    <Folder Include="SparkApp\modelsBo\ActorModels\Joueur\" />
+    <Folder Include="SparkApp\modelsBo\ActorModels\Equipe\" />
+    <Folder Include="SparkApp\modelsBo\ActorModels\Ecole\" />
+    <Folder Include="SparkApp\modelsBo\ActorModels\Auteur\" />
+    <Folder Include="SparkApp\modelsBo\ActorModels\Reseau\" />
+    <Folder Include="SparkApp\modelsBo\ActorModels\OrganisateurEvenement\" />
+    <Folder Include="SparkApp\modelsBo\ConfigurationFields\" />
+    <Folder Include="SparkApp\modelsBo\ModelsUtilitaires\" />
+    <Folder Include="SparkApp\modelsBo\" />
+    <Folder Include="SparkApp\modelsBo\PublicationsTypes\LeconTypes\" />
+    <Folder Include="SparkApp\modelsBo\UserOrientedRelations\" />
+    <Folder Include="SparkApp\modelsBo\PublicationsTypes\" />
+    <Folder Include="SparkApp\serializers\" />
+    <Folder Include="SparkApp\serializers\ActorSerializers\" />
+    <Folder Include="SparkApp\serializers\ActorSerializers\Auteur\" />
+    <Folder Include="SparkApp\serializers\ActorSerializers\Club\" />
+    <Folder Include="SparkApp\serializers\ActorSerializers\Ecole\" />
+    <Folder Include="SparkApp\serializers\ActorSerializers\EntreprisePublicitaire\" />
+    <Folder Include="SparkApp\serializers\ActorSerializers\Equipe\" />
+    <Folder Include="SparkApp\serializers\ActorSerializers\Joueur\" />
+    <Folder Include="SparkApp\serializers\ActorSerializers\Magasin\" />
+    <Folder Include="SparkApp\serializers\ActorSerializers\OrganisateurEvenement\" />
+    <Folder Include="SparkApp\serializers\ActorSerializers\Reseau\" />
+    <Folder Include="SparkApp\serializers\ModelsUtilitaires_srl\" />
+    <Folder Include="SparkApp\serializers\PublicationsTypeSerializers\" />
+    <Folder Include="SparkApp\serializers\PublicationsTypeSerializers\LeconTypes_srl\" />
+    <Folder Include="SparkApp\serializers\UserOrientedRelations_srl\" />
+    <Folder Include="SparkApp\utilsFonctions\" />
+    <Folder Include="SparkApp\templates\" />
+    <Folder Include="SparkApp\templates\SparkApp\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
