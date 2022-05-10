@@ -1,0 +1,1 @@
+from .EquipeClass import Equipe

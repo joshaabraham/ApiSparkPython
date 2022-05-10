@@ -1,0 +1,2 @@
+
+from .MagasinClass import Magasin 

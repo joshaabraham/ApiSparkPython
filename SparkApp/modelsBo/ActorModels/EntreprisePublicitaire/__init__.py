@@ -1,0 +1,1 @@
+from .EntPublicitaireClass import EntreprisePublicitaire

@@ -1,0 +1,1 @@
+from .EcoleClass import Ecole

@@ -16,6 +16,6 @@ urlpatterns=[
     url(r'^configuration/$',views.configurationApi),
     url(r'^configuration/([0-9]+)$',views.configurationApi),
 
-
+    # file URLs
     url(r'^SaveFile$', views.SaveFile)
     ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

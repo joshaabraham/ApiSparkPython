@@ -57,30 +57,41 @@
     <Compile Include="SparkApp\modelsBo\ActorModels\Auteur\AuteurClass.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="SparkApp\modelsBo\ActorModels\Auteur\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="SparkApp\modelsBo\ActorModels\Club\ClubClass.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="SparkApp\modelsBo\ActorModels\Club\__init__.py" />
     <Compile Include="SparkApp\modelsBo\ActorModels\Ecole\EcoleClass.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="SparkApp\modelsBo\ActorModels\Ecole\__init__.py" />
     <Compile Include="SparkApp\modelsBo\ActorModels\EntreprisePublicitaire\EntPublicitaireClass.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="SparkApp\modelsBo\ActorModels\EntreprisePublicitaire\__init__.py" />
     <Compile Include="SparkApp\modelsBo\ActorModels\Equipe\EquipeClass.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="SparkApp\modelsBo\ActorModels\Equipe\__init__.py" />
     <Compile Include="SparkApp\modelsBo\ActorModels\Joueur\JoueurClass.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="SparkApp\modelsBo\ActorModels\Joueur\__init__.py" />
     <Compile Include="SparkApp\modelsBo\ActorModels\Magasin\MagasinClass.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="SparkApp\modelsBo\ActorModels\Magasin\__init__.py" />
     <Compile Include="SparkApp\modelsBo\ActorModels\OrganisateurEvenement\OrganisateurEveClass.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="SparkApp\modelsBo\ActorModels\OrganisateurEvenement\__init__.py" />
     <Compile Include="SparkApp\modelsBo\ActorModels\Reseau\ReseauClass.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="SparkApp\modelsBo\ActorModels\Reseau\__init__.py" />
     <Compile Include="SparkApp\modelsBo\ActorModels\__init__.py">
       <SubType>Code</SubType>
     </Compile>
