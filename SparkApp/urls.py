@@ -2,10 +2,14 @@
 from django.conf.urls import url
 from SparkApp import views
 
+from django.contrib import admin
 from django.conf.urls.static import static
 from django.conf import settings
 
 urlpatterns=[
+    url(r'^admin/',admin.site.urls),
+
+
     url(r'^authentification/$',views.authentificationApi),
     url(r'^authentification/([0-9]+)$',views.authentificationApi),
    # url(r'^auth/$', views.getAuthenticated),
