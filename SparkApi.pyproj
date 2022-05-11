@@ -252,6 +252,12 @@
     <Compile Include="SparkApp\urls.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="SparkApp\utilsFonctions\BarCodeAndQRCodeMethods.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\utilsFonctions\PaymentMethodes.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="SparkApp\utilsFonctions\UUIDGenerateur.py">
       <SubType>Code</SubType>
     </Compile>
