@@ -98,7 +98,22 @@
     <Compile Include="SparkApp\modelsBo\authentication_register.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="SparkApp\modelsBo\configuration.py">
+    <Compile Include="SparkApp\modelsBo\configurations.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\ConfigurationFields\ConfigurationCommercialeClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\ConfigurationFields\ConfigurationGroupeClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\ConfigurationFields\ConfigurationProfilClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\ConfigurationFields\ConfigurationUIClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\ConfigurationFields\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="SparkApp\modelsBo\ModelsUtilitaires\AdressePostale.py">
@@ -120,6 +135,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="SparkApp\modelsBo\ModelsUtilitaires\NumeroTelephone.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\ModelsUtilitaires\SouscriptionClass.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="SparkApp\modelsBo\ModelsUtilitaires\__init__.py">
@@ -153,6 +171,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="SparkApp\modelsBo\sportClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\userClass.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="SparkApp\modelsBo\UserOrientedRelations\CentreInteretClass.py">

@@ -12,17 +12,17 @@ class Profil(models.Model):
     PhotoProfilFileName = models.CharField(max_length=100)
 
     #details sur la personne
-    #profilDetailPersonne_FK_ID = models.ForeignKey('ProfilDetailPersonne', on_delete=models.CASCADE,  null=False, default=str(uuid.uuid4()))
+    #profilDetailPersonne_FK_ID = models.ForeignKey('ProfilDetailPersonne', on_delete=models.CASCADE,  null=False, default=str(uuid.uuid4()))  FK one
 
     ##configuration
-    #configuration_FK_ID = models.ForeignKey('Configuration', on_delete=models.CASCADE,  null=False, default=str(uuid.uuid4()))
+    #configuration_FK_ID = models.ForeignKey('Configuration', on_delete=models.CASCADE,  null=False, default=str(uuid.uuid4()))                 FK one
 
     ##profilCommercialSpark
-    #profilCommercialSpark_FK_ID = models.ForeignKey('ProfilCommercialSpark', on_delete=models.CASCADE,  null=False, default=str(uuid.uuid4()))
+    #profilCommercialSpark_FK_ID = models.ForeignKey('ProfilCommercialSpark', on_delete=models.CASCADE,  null=False, default=str(uuid.uuid4())) FK one
 
 
-    #relation_FK_ID = models.ForeignKey('Relation', on_delete=models.CASCADE, unique=True,  default=str(uuid.uuid4()))
-    #invitation_FK_ID = models.ForeignKey('Invitations', on_delete=models.CASCADE, null=True)
+    #relation_FK_ID = models.ForeignKey('Relation', on_delete=models.CASCADE, unique=True,  default=str(uuid.uuid4()))                          FK one
+    #invitation_FK_ID = models.ForeignKey('Invitations', on_delete=models.CASCADE, null=True) 
     #equipe_FK_ID = models.ForeignKey('Equipe', on_delete=models.CASCADE, null=True)
     #sport_FK_tID = models.ForeignKey('Sport', on_delete=models.CASCADE, null=True)
     #magasin_FK_ID = models.ForeignKey('Magasin', on_delete=models.CASCADE, null=True)
