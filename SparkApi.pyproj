@@ -134,6 +134,9 @@
     <Compile Include="SparkApp\modelsBo\ModelsUtilitaires\MediaVideo.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="SparkApp\modelsBo\ModelsUtilitaires\NotificationClass.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="SparkApp\modelsBo\ModelsUtilitaires\NumeroTelephone.py">
       <SubType>Code</SubType>
     </Compile>
