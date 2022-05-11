@@ -140,6 +140,9 @@
     <Compile Include="SparkApp\modelsBo\ModelsUtilitaires\SouscriptionClass.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="SparkApp\modelsBo\ModelsUtilitaires\TransactionClass.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="SparkApp\modelsBo\ModelsUtilitaires\__init__.py">
       <SubType>Code</SubType>
     </Compile>
@@ -289,6 +292,7 @@
     <Folder Include="SparkApp\modelsBo\PublicationsTypes\LeconTypes\" />
     <Folder Include="SparkApp\modelsBo\UserOrientedRelations\" />
     <Folder Include="SparkApp\modelsBo\PublicationsTypes\" />
+    <Folder Include="SparkApp\Services\" />
     <Folder Include="SparkApp\serializers\" />
     <Folder Include="SparkApp\serializers\ActorSerializers\" />
     <Folder Include="SparkApp\serializers\ActorSerializers\Auteur\" />
