@@ -1,6 +1,6 @@
 
 from django.conf.urls import url
-from SparkApp import views
+# a deplacer dans un nouveau dossier urls #from SparkApp.Views import ctrl_Authentication
 
 from django.contrib import admin
 from django.conf.urls.static import static

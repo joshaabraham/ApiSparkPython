@@ -20,7 +20,7 @@ from rest_framework.response import Response
 from django.contrib.auth.models import User
 
 
-from SparkApp.Controllers import configurationApi, profilApi, authentificationApi
+from SparkApp.Views import configurationApi, profilApi, authentificationApi
 
 # Create your views here.
 

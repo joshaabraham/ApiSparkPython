@@ -4,7 +4,7 @@ from rest_framework.parsers import JSONParser
 from django.http.response import JsonResponse
 
 from SparkApp.modelsBo import Authentification
-from SparkApp.serializers import *
+from SparkApp.serializers.authentication_srl import  AuthentificationSerializer
 
 from rest_framework.authentication import TokenAuthentication
 from rest_framework.decorators import api_view,authentication_classes,permission_classes
@@ -22,6 +22,20 @@ def example_view(request, format=None):
         'auth': str(request.auth),  # None
     }
     return Response(content)
+
+
+
+@api_view(['GET'])
+def api_authentication (request, slug):
+
+    try:
+        authentication = Authentification.objects.get(slug=slug)
+    except Authentification.DoesnotExist:
+        return Response(status=status.HTTP_404_NOT_FOUND)
+
+    if request.method=='GET':
+         serializer = Authentification(authentication)
+         return Response(serializer.data)
 
 
 @csrf_exempt

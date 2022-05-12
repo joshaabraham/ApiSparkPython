@@ -3,7 +3,7 @@ from rest_framework.parsers import JSONParser
 from django.http.response import JsonResponse
 
 from SparkApp.modelsBo import Profil
-from SparkApp.serializers import *
+from SparkApp.serializers.profil_srlz import ProfilSerializer
 
 
 

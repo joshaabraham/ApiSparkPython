@@ -40,16 +40,16 @@
     <Compile Include="SparkApi\wsgi.py" />
     <Compile Include="SparkApp\admin.py" />
     <Compile Include="SparkApp\apps.py" />
-    <Compile Include="SparkApp\controllers\ctrl_Authentication.py">
+    <Compile Include="SparkApp\Views\ctrl_Authentication.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="SparkApp\controllers\ctrl_Configuration.py">
+    <Compile Include="SparkApp\Views\ctrl_Configuration.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="SparkApp\controllers\ctrl_Profil.py">
+    <Compile Include="SparkApp\Views\ctrl_Profil.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="SparkApp\controllers\__init__.py">
+    <Compile Include="SparkApp\Views\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="SparkApp\migrations\__init__.py" />
@@ -254,6 +254,9 @@
     <Compile Include="SparkApp\serializers\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="SparkApp\Services\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="SparkApp\tests.py" />
     <Compile Include="SparkApp\urls.py">
       <SubType>Code</SubType>
@@ -278,7 +281,7 @@
     <Folder Include="SparkApi\" />
     <Folder Include="SparkApp\" />
     <Folder Include="SparkApp\migrations\" />
-    <Folder Include="SparkApp\controllers\" />
+    <Folder Include="SparkApp\Views\" />
     <Folder Include="SparkApp\modelsBo\ActorModels\" />
     <Folder Include="SparkApp\modelsBo\ActorModels\Club\" />
     <Folder Include="SparkApp\modelsBo\ActorModels\Magasin\" />
