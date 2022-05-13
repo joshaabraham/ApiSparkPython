@@ -6,7 +6,7 @@ from django.contrib import admin
 from django.conf.urls.static import static
 from django.conf import settings
 
-from SparkApp.Views import authentificationApi , profilApi, configurationApi
+from SparkApp.Views import authentificationApi , profilApi, configurationApi , saveFile
 from SparkApp.views import *
 
 
@@ -25,5 +25,5 @@ urlpatterns=[
     url(r'^configuration/([0-9]+)$',configurationApi),
 
     # file URLs
-    url(r'^SaveFile$', SaveFile)
+    url(r'^SaveFile$', saveFile)
     ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

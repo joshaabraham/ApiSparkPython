@@ -83,12 +83,12 @@ from SparkApp.Views import configurationApi, profilApi, authentificationApi
 #         return JsonResponse("Deleted Succeffully!!", safe=False)
 
 
-@csrf_exempt
-def SaveFile(request):
-    file=request.FILES['uploadedFile']
-    file_name = default_storage.save(file.name,file)
+#@csrf_exempt
+#def SaveFile(request):
+#    file=request.FILES['uploadedFile']
+#    file_name = default_storage.save(file.name,file)
 
-    return JsonResponse(file_name,safe=False)
+#    return JsonResponse(file_name,safe=False)
 
 
 

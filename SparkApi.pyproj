@@ -58,6 +58,9 @@
     <Compile Include="SparkApp\Views\ctrl_Profil.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="SparkApp\Views\FileApiViews.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="SparkApp\Views\ModelsUtilitairesViews\__init__.py">
       <SubType>Code</SubType>
     </Compile>
