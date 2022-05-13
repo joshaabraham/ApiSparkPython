@@ -6,4 +6,7 @@ from .MediaVideo import Video
 from .NumeroTelephone import Telephone
 from .SouscriptionClass import Souscription
 from .TransactionClass import Transaction, StatusSubClass
+from .CodeQRClass import CodeQR
+from .BarcodeClass import Barcode
+from .GeoCoordinatesClass import GeoCoordinates
 

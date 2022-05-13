@@ -6,20 +6,24 @@ from django.contrib import admin
 from django.conf.urls.static import static
 from django.conf import settings
 
+from SparkApp.Views import authentificationApi , profilApi, configurationApi
+from SparkApp.views import *
+
+
 urlpatterns=[
   
 
 
-    url(r'^authentification/$',views.authentificationApi),
-    url(r'^authentification/([0-9]+)$',views.authentificationApi),
+    url(r'^authentification/$', authentificationApi),
+    url(r'^authentification/([0-9]+)$', authentificationApi),
    # url(r'^auth/$', views.getAuthenticated),
 
-    url(r'^profil/$',views.profilApi),
-    url(r'^profil/([0-9]+)$',views.profilApi),
+    url(r'^profil/$',profilApi),
+    url(r'^profil/([0-9]+)$',profilApi),
 
-    url(r'^configuration/$',views.configurationApi),
-    url(r'^configuration/([0-9]+)$',views.configurationApi),
+    url(r'^configuration/$',configurationApi),
+    url(r'^configuration/([0-9]+)$',configurationApi),
 
     # file URLs
-    url(r'^SaveFile$', views.SaveFile)
+    url(r'^SaveFile$', SaveFile)
     ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

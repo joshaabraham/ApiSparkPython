@@ -40,6 +40,15 @@
     <Compile Include="SparkApi\wsgi.py" />
     <Compile Include="SparkApp\admin.py" />
     <Compile Include="SparkApp\apps.py" />
+    <Compile Include="SparkApp\modelsBo\ModelsUtilitaires\BarcodeClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\ModelsUtilitaires\CodeQRClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\Views\ActorsViews\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="SparkApp\Views\ctrl_Authentication.py">
       <SubType>Code</SubType>
     </Compile>
@@ -47,6 +56,15 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="SparkApp\Views\ctrl_Profil.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\Views\ModelsUtilitairesViews\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\Views\PublicationsTypeViews\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\Views\UserOrientedRelationsViews\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="SparkApp\Views\__init__.py">
@@ -254,7 +272,7 @@
     <Compile Include="SparkApp\serializers\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="SparkApp\Services\__init__.py">
+    <Compile Include="SparkApp\services\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="SparkApp\tests.py" />
@@ -298,7 +316,7 @@
     <Folder Include="SparkApp\modelsBo\PublicationsTypes\LeconTypes\" />
     <Folder Include="SparkApp\modelsBo\UserOrientedRelations\" />
     <Folder Include="SparkApp\modelsBo\PublicationsTypes\" />
-    <Folder Include="SparkApp\Services\" />
+    <Folder Include="SparkApp\services\" />
     <Folder Include="SparkApp\serializers\" />
     <Folder Include="SparkApp\serializers\ActorSerializers\" />
     <Folder Include="SparkApp\serializers\ActorSerializers\Auteur\" />
@@ -317,6 +335,10 @@
     <Folder Include="SparkApp\utilsFonctions\" />
     <Folder Include="SparkApp\templates\" />
     <Folder Include="SparkApp\templates\SparkApp\" />
+    <Folder Include="SparkApp\Views\ActorsViews\" />
+    <Folder Include="SparkApp\Views\ModelsUtilitairesViews\" />
+    <Folder Include="SparkApp\Views\UserOrientedRelationsViews\" />
+    <Folder Include="SparkApp\Views\PublicationsTypeViews\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
