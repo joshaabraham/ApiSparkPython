@@ -39,6 +39,9 @@
     <Compile Include="SparkApi\wsgi.py" />
     <Compile Include="SparkApp\admin.py" />
     <Compile Include="SparkApp\apps.py" />
+    <Compile Include="SparkApp\modelsBo\AccountClass.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="SparkApp\modelsBo\ActorModels\Administrateur\AdministrateurClass.py">
       <SubType>Code</SubType>
     </Compile>

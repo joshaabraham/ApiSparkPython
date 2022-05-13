@@ -7,3 +7,4 @@ from .ModelsUtilitaires import *
 from .PublicationsTypes import *
 from .UserOrientedRelations import *
 from .ConfigurationFields import *
+from .AccountClass import *
