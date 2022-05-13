@@ -5,8 +5,7 @@
     <RootNamespace>SparkApi</RootNamespace>
     <WebBrowserPort>5000</WebBrowserPort>
     <TestFramework>Pytest</TestFramework>
-    <InterpreterId>
-    </InterpreterId>
+    <InterpreterId>Global|PythonCore|3.6</InterpreterId>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -40,10 +39,19 @@
     <Compile Include="SparkApi\wsgi.py" />
     <Compile Include="SparkApp\admin.py" />
     <Compile Include="SparkApp\apps.py" />
+    <Compile Include="SparkApp\modelsBo\ActorModels\Administrateur\AdministrateurClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\ActorModels\Administrateur\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="SparkApp\modelsBo\ModelsUtilitaires\BarcodeClass.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="SparkApp\modelsBo\ModelsUtilitaires\CodeQRClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\ModelsUtilitaires\PaymentClass.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="SparkApp\Views\ActorsViews\__init__.py">
@@ -302,6 +310,7 @@
     <Folder Include="SparkApi\" />
     <Folder Include="SparkApp\" />
     <Folder Include="SparkApp\migrations\" />
+    <Folder Include="SparkApp\modelsBo\ActorModels\Administrateur\" />
     <Folder Include="SparkApp\Views\" />
     <Folder Include="SparkApp\modelsBo\ActorModels\" />
     <Folder Include="SparkApp\modelsBo\ActorModels\Club\" />
@@ -342,6 +351,9 @@
     <Folder Include="SparkApp\Views\ModelsUtilitairesViews\" />
     <Folder Include="SparkApp\Views\UserOrientedRelationsViews\" />
     <Folder Include="SparkApp\Views\PublicationsTypeViews\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.6" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 

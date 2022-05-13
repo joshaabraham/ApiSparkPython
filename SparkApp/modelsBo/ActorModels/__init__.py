@@ -7,3 +7,4 @@ from .OrganisateurEvenement import *
 from .Reseau import *
 from .Ecole import *
 from .Auteur import *
+from .Administrateur import *

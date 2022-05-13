@@ -9,4 +9,5 @@ from .TransactionClass import Transaction, StatusSubClass
 from .CodeQRClass import CodeQR
 from .BarcodeClass import Barcode
 from .GeoCoordinatesClass import GeoCoordinates
+from .PaymentClass import Payment
 
