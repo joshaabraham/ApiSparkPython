@@ -135,3 +135,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
+
+STRIPE_PUBLISHED_KEY = 'pk_test_HtrKyjcjaBTdAaVWGjhSFezh'
+STRIPE_SECRET_KEY = 'sk_test_dDeo4vgaCHcbLxhqiOHYOb2Q00GXIzZXcD'
+STRIPE_WEBHOOK_KEY = ''

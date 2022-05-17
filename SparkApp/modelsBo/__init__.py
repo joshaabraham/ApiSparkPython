@@ -8,3 +8,4 @@ from .PublicationsTypes import *
 from .UserOrientedRelations import *
 from .ConfigurationFields import *
 from .AccountClass import *
+from .Objects import *

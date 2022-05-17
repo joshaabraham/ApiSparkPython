@@ -57,6 +57,15 @@
     <Compile Include="SparkApp\modelsBo\ModelsUtilitaires\PaymentClass.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="SparkApp\modelsBo\Objects\ProduitClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\modelsBo\Objects\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\services\StripePaymentGateway.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="SparkApp\Views\ActorsViews\__init__.py">
       <SubType>Code</SubType>
     </Compile>
@@ -314,6 +323,7 @@
     <Folder Include="SparkApp\" />
     <Folder Include="SparkApp\migrations\" />
     <Folder Include="SparkApp\modelsBo\ActorModels\Administrateur\" />
+    <Folder Include="SparkApp\modelsBo\Objects\" />
     <Folder Include="SparkApp\Views\" />
     <Folder Include="SparkApp\modelsBo\ActorModels\" />
     <Folder Include="SparkApp\modelsBo\ActorModels\Club\" />
