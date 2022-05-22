@@ -25,17 +25,38 @@ def example_view(request, format=None):
 
 
 
-@api_view(['GET'])
-def api_authentication (request, slug):
+#@api_view(['GET'])
+#def api_authentication (request, slug):
 
-    try:
-        authentication = Authentification.objects.get(slug=slug)
-    except Authentification.DoesnotExist:
-        return Response(status=status.HTTP_404_NOT_FOUND)
+#    try:
+#        authentication = Authentification.objects.get(slug=slug)
+#    except Authentification.DoesnotExist:
+#        return Response(status=status.HTTP_404_NOT_FOUND)
 
-    if request.method=='GET':
-         serializer = Authentification(authentication)
-         return Response(serializer.data)
+#    if request.method=='GET':
+#         serializer = Authentification(authentication)
+#         return Response(serializer.data)
+
+
+
+@csrf_exempt
+def authentificationRegister(request,id=0):
+      auth_data=JSONParser().parse(request)
+      auth_serializer = AuthentificationSerializer(data=auth_data)
+      if auth_serializer.is_valid():
+            auth_serializer.save()
+            return JsonResponse("Registered Successfully!!" , safe=False)
+      return JsonResponse("Failed to Register.",safe=False)
+
+
+@csrf_exempt
+def authentificationLogin(request,id=0):
+      auth_data=JSONParser().parse(request)
+      auth_serializer = AuthentificationSerializer(data=auth_data)
+      if auth_serializer.is_valid():
+            auth_serializer.save()
+            return JsonResponse("Registered Successfully!!" , safe=False)
+      return JsonResponse("Failed to Register.",safe=False)
 
 
 @csrf_exempt

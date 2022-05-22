@@ -16,6 +16,8 @@ urlpatterns=[
 
     url(r'^authentification/$', authentificationApi),
     url(r'^authentification/([0-9]+)$', authentificationApi),
+    url(r'^authentification/register/$', authentificationRegister),
+    url(r'^authentification/login/$', authentificationLogin),
    # url(r'^auth/$', views.getAuthenticated),
 
     url(r'^profil/$',profilApi),

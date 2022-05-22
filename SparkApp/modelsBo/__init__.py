@@ -9,4 +9,4 @@ from .UserOrientedRelations import *
 from .ConfigurationFields import *
 from .AccountClass import *
 from .Objects import *
-from .RoomsClass import *
+from .ModelSystemUtilitaire import *

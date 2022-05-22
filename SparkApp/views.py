@@ -23,13 +23,14 @@ from django.contrib.auth.models import User
 # for payment
 import stripe
 from django.http import JsonResponse
-from SparkApi.settings import settings
+#from SparkApi.settings import settings
 
 
 from SparkApp.Views import configurationApi, profilApi, authentificationApi
 
 # for payment
-stripe.api_key = setting.STRIPE_SECRET_KEY
+stripe.api_key = ''
+#stripe.api_key = setting.STRIPE_SECRET_KEY
 
 
 
@@ -111,33 +112,33 @@ stripe.api_key = setting.STRIPE_SECRET_KEY
 #        return JsonResponse(content)
 
 
-class CreateCheckoutSession(View):
-    def post(self, request, *args, **kwargs):
-        YOUR_DOMAIN = 'https://localhost:8000'
-        checkout_session = stripe.checkout.Session.create(
-            line_items=[
-                {
-                    'price_data': {
-                        'currency': 'usd',
-                        'unit_amount': product.price,
-                        'product_data': {
-                            'name': product.name,
-                            # 'images': ['https://i.imgur.com/EHyR2nP.png'],
-                        },
-                    },
-                    'quantity': 1,
-                },
-            ],
-            metadata={
-                "product_id": product.id
-            },
-            mode='payment',
-            success_url=YOUR_DOMAIN + '/success/',
-            cancel_url=YOUR_DOMAIN + '/cancel/',
-        )
-        return JsonResponse({
-            'id': checkout_session.id
-        })
+#class CreateCheckoutSession(View):
+#    def post(self, request, *args, **kwargs):
+#        YOUR_DOMAIN = 'https://localhost:8000'
+#        checkout_session = stripe.checkout.Session.create(
+#            line_items=[
+#                {
+#                    'price_data': {
+#                        'currency': 'usd',
+#                        'unit_amount': product.price,
+#                        'product_data': {
+#                            'name': product.name,
+#                            # 'images': ['https://i.imgur.com/EHyR2nP.png'],
+#                        },
+#                    },
+#                    'quantity': 1,
+#                },
+#            ],
+#            metadata={
+#                "product_id": product.id
+#            },
+#            mode='payment',
+#            success_url=YOUR_DOMAIN + '/success/',
+#            cancel_url=YOUR_DOMAIN + '/cancel/',
+#        )
+#        return JsonResponse({
+#            'id': checkout_session.id
+#        })
 
 
          #line_items=[

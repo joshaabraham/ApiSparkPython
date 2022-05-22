@@ -21,12 +21,12 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url,include
 
-from SparkApp.views import CreateCheckoutSession
+#from SparkApp.views import CreateCheckoutSession
 
 urlpatterns = [
     # Uncomment the next line to enable the admin:
     #path('admin/', admin.site.urls)
     path('admin/', admin.site.urls),
-    path('create-checkout-session', CreateCheckoutSession.as_view(), name='create-checkout-session'),
+    #path('create-checkout-session', CreateCheckoutSession.as_view(), name='create-checkout-session'),
     url(r'^', include('SparkApp.urls'))
 ]
