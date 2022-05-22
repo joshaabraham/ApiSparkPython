@@ -6,7 +6,7 @@ from django.contrib import admin
 from django.conf.urls.static import static
 from django.conf import settings
 
-from SparkApp.Views import authentificationApi , profilApi, configurationApi , saveFile
+from SparkApp.Views import authentificationApi , profilApi, configurationApi , saveFile, authentificationRegister, authentificationLogin
 from SparkApp.views import *
 
 

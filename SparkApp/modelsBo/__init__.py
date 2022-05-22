@@ -10,3 +10,4 @@ from .ConfigurationFields import *
 from .AccountClass import *
 from .Objects import *
 from .ModelSystemUtilitaire import *
+from .userClass import SparkUser
