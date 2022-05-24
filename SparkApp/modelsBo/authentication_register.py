@@ -9,6 +9,7 @@ class Authentification(models.Model):
     email = models.EmailField(max_length=100, unique=True)
     motdepasse = models.CharField(max_length=100)
 
+
     def __str__(self):
         return self.name
 
@@ -21,7 +22,7 @@ post_save.connect(create_authentification, sender=Authentification)
 
 def update_authentification(sender, instance, created, **kwargs):
         if created == False:
-                instance.profile.save()
-                print('Authentification updated!')
+            instance.profile.save()
+            print('Authentification updated!')
 
 post_save.connect(update_authentification, sender=Authentification)

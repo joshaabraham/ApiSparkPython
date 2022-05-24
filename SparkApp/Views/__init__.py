@@ -1,4 +1,5 @@
-from .ctrl_Profil import profilApi
-from .ctrl_Configuration import configurationApi
-from .ctrl_Authentication import authentificationApi, authentificationLogin, authentificationRegister
-from .FileApiViews import saveFile
+from .vw_Profil import profilApi
+from .vw_Configuration import configurationApi
+from .vw_Authentication import authentificationApi
+from .vw_FileApiViews import saveFile
+from .vw_SparkUser import authentificationRegister

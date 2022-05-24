@@ -49,26 +49,6 @@ def example_view(request, format=None):
 
 
 @csrf_exempt
-def authentificationRegister(request,id=0):
-      auth_data=JSONParser().parse(request)
-      auth_serializer = AuthentificationSerializer(data=auth_data)
-      if auth_serializer.is_valid():
-            auth_serializer.save()
-            return JsonResponse("Registered Successfully!!" , safe=False)
-      return JsonResponse("Failed to Register.",safe=False)
-
-
-@csrf_exempt
-def authentificationLogin(request,id=0):
-      auth_data=JSONParser().parse(request)
-      auth_serializer = AuthentificationSerializer(data=auth_data)
-      if auth_serializer.is_valid():
-            auth_serializer.save()
-            return JsonResponse("Registered Successfully!!" , safe=False)
-      return JsonResponse("Failed to Register.",safe=False)
-
-
-@csrf_exempt
 def authentificationApi(request,id=0):
     if request.method=='GET':
         authentications = Authentification.objects.all()
@@ -102,5 +82,5 @@ def authentificationApi(request,id=0):
 @receiver(post_save, sender=settings.AUTH_USER_MODEL)
 def create_auth_token(sender, instance=None, created=False, **kwargs):
     if created:
-        Token._prefetched_objects_cache.create(user=instance)
+        Token.objects.create(user=instance)
 

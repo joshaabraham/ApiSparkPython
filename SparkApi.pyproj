@@ -69,22 +69,34 @@
     <Compile Include="SparkApp\modelsBo\Objects\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="SparkApp\serializers\SparkUser_srlz.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="SparkApp\services\StripePaymentGateway.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\Urls\url_SparkUser.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\Urls\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="SparkApp\Views\ActorsViews\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="SparkApp\Views\ctrl_Authentication.py">
+    <Compile Include="SparkApp\Views\vw_Authentication.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="SparkApp\Views\ctrl_Configuration.py">
+    <Compile Include="SparkApp\Views\vw_Configuration.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="SparkApp\Views\ctrl_Profil.py">
+    <Compile Include="SparkApp\Views\vw_Profil.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="SparkApp\Views\FileApiViews.py">
+    <Compile Include="SparkApp\Views\vw_SparkUser.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\Views\vw_FileApiViews.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="SparkApp\Views\ModelsUtilitairesViews\__init__.py">
@@ -226,7 +238,7 @@
     <Compile Include="SparkApp\modelsBo\sportClass.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="SparkApp\modelsBo\userClass.py">
+    <Compile Include="SparkApp\modelsBo\SparkUserClass.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="SparkApp\modelsBo\UserOrientedRelations\CentreInteretClass.py">
@@ -331,6 +343,7 @@
     <Folder Include="SparkApp\modelsBo\ActorModels\Administrateur\" />
     <Folder Include="SparkApp\modelsBo\ModelSystemUtilitaire\" />
     <Folder Include="SparkApp\modelsBo\Objects\" />
+    <Folder Include="SparkApp\Urls\" />
     <Folder Include="SparkApp\Views\" />
     <Folder Include="SparkApp\modelsBo\ActorModels\" />
     <Folder Include="SparkApp\modelsBo\ActorModels\Club\" />

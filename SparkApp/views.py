@@ -26,7 +26,7 @@ from django.http import JsonResponse
 #from SparkApi.settings import settings
 
 
-from SparkApp.Views import configurationApi, profilApi, authentificationApi
+from SparkApp.Views import *
 
 # for payment
 stripe.api_key = ''
