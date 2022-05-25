@@ -18,7 +18,7 @@ from rest_framework.authtoken.models import Token
 def authentificationRegister(request):
 
     if request.method == 'POST':
-        serializer = SparkUserSerializer(DeprecationWarning=request.data)
+        serializer = SparkUserSerializer(data=request.data)
         data={}
         if serializer.is_valid():
             sparkUser = serializer.save()
@@ -27,7 +27,7 @@ def authentificationRegister(request):
             data['username'] = sparkUser.username
         else:
             data = serializer.errors
-        return JsonResponse[data]
+        return Response[data]
 
 
 

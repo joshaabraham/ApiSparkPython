@@ -7,14 +7,20 @@ from django.contrib import admin
 from django.conf.urls.static import static
 from django.conf import settings
 
-from SparkApp.Views import *
+from SparkApp.views import *
 
+from .Urls import *
+
+from rest_framework.authtoken import views
+from django.contrib.auth.views import auth_login
 
 urlpatterns=[
-  
+    path('api-token-auth/', views.obtain_auth_token, name='api-token-auth'),
+    path('login/', auth_login, name='login'),
+
     url(r'^authentification/$', authentificationApi),
     url(r'^authentification/([0-9]+)$', authentificationApi),
-    url(r'^authentification/register/', authentificationRegister), # include('.SparkUserUrl')
+    #url(r'^authentification/register/', authentificationRegister),
     #url(r'^authentification/login/$', authentificationLogin),
    # url(r'^auth/$', views.getAuthenticated),
 

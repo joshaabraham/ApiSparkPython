@@ -7,11 +7,11 @@ from SparkApp.modelsBo import SparkUser
 
 class SparkUserSerializer(serializers.ModelSerializer):
 
-    password2 = serializers.CharField(style={'input-type':'password'}, write_only=True)
+    #password2 = serializers.CharField(style={'input-type':'password'}, write_only=True)
 
     class Meta:
         model = SparkUser
-        fields = ['username', 'email', 'password', 'password2']
+        fields = [ 'email', 'username', 'password']
         extra_kwars ={ 
             'password':{'write_only': True}
         }

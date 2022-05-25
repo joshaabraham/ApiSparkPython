@@ -72,6 +72,9 @@
     <Compile Include="SparkApp\serializers\SparkUser_srlz.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="SparkApp\services\AuthenticateService.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="SparkApp\services\StripePaymentGateway.py">
       <SubType>Code</SubType>
     </Compile>

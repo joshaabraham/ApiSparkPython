@@ -11,24 +11,28 @@ from django.conf import settings
 from django.dispatch import receiver
 from rest_framework.authtoken.models import Token
 from django.db.models.signals import post_save
+from django.contrib.auth.models import AbstractUser, PermissionsMixin
 
 
 
 
 
-class SparkUser(models.Model):
+class SparkUser(AbstractUser):
 
     sparkuserID  = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    user = models.OneToOneField(User, on_delete=models.CASCADE, blank=True, null=True)
-    username = models.CharField(max_length=100)
+    #username = models.CharField(max_length=100, unique=False)
     email = models.EmailField(max_length=100, unique=True)
     password = models.CharField(max_length=100)
+    #password2 = models.CharField(max_length=100)
 
     #profil_fk
     #configuration_fk
+    EMAIL_FIELD = ['email']
+    #USERNAME_FIELD = 'email'
+    REQUIRED_FIELD = ['password', 'email', 'username']
 
     def __str__(self):
-        return str(self.user_id)
+        return str(self.get_email_field_name)
 
 
 #@receiver(post_save, sender=SparkUser)

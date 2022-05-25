@@ -1,8 +1,8 @@
 from django.urls import path
-from .SparkApp.Views.vw_SparkUser import (authentificationRegister,)
+from ..Views.vw_SparkUser import authentificationRegister
 
 
-app_name = "sparkUser"
+app_name = "SparkUser"
 
 urlpatterns = [
     path('register', authentificationRegister, name="register"),
