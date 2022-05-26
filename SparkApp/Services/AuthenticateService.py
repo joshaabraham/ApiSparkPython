@@ -10,13 +10,13 @@ class AuthService:
         pwd_valid = check_password(password, settings.ADMIN_PASSWORD)
         if login_valid and pwd_valid:
             try:
-                user = User.objects.get(username=username)
+                spUser = SparkUser.objects.get(username=username)
             except User.DoesNotExist:
                 # Create a new user. There's no need to set a password
                 # because only the password from settings.py is checked.
                 user = User(username=username)
-                user.is_staff = True
-                user.is_superuser = True
+                user.is_staff = False
+                user.is_superuser = False
                 user.save()
             return user
         return None

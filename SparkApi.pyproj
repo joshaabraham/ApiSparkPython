@@ -69,6 +69,9 @@
     <Compile Include="SparkApp\modelsBo\Objects\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="SparkApp\serializers\User_srlz.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="SparkApp\serializers\SparkUser_srlz.py">
       <SubType>Code</SubType>
     </Compile>
@@ -78,13 +81,13 @@
     <Compile Include="SparkApp\services\StripePaymentGateway.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="SparkApp\Urls\url_SparkUser.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="SparkApp\Urls\__init__.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="SparkApp\Views\ActorsViews\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\Views\PaymentsView\vw_CreateCheckoutPayment.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\Views\PaymentsView\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="SparkApp\Views\vw_Authentication.py">
@@ -109,6 +112,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="SparkApp\Views\UserOrientedRelationsViews\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkApp\Views\vw_UserClass.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="SparkApp\Views\__init__.py">
@@ -346,7 +352,6 @@
     <Folder Include="SparkApp\modelsBo\ActorModels\Administrateur\" />
     <Folder Include="SparkApp\modelsBo\ModelSystemUtilitaire\" />
     <Folder Include="SparkApp\modelsBo\Objects\" />
-    <Folder Include="SparkApp\Urls\" />
     <Folder Include="SparkApp\Views\" />
     <Folder Include="SparkApp\modelsBo\ActorModels\" />
     <Folder Include="SparkApp\modelsBo\ActorModels\Club\" />
@@ -385,6 +390,7 @@
     <Folder Include="SparkApp\templates\SparkApp\" />
     <Folder Include="SparkApp\Views\ActorsViews\" />
     <Folder Include="SparkApp\Views\ModelsUtilitairesViews\" />
+    <Folder Include="SparkApp\Views\PaymentsView\" />
     <Folder Include="SparkApp\Views\UserOrientedRelationsViews\" />
     <Folder Include="SparkApp\Views\PublicationsTypeViews\" />
   </ItemGroup>

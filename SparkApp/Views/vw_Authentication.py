@@ -22,32 +22,6 @@ from rest_framework.authtoken.models import Token
 
 
 
-@api_view(['GET'])
-@authentication_classes([TokenAuthentication])
-@permission_classes([IsAuthenticated])
-def example_view(request, format=None):
-    content = {
-        'user': str(request.user),  # `django.contrib.auth.User` instance.
-        'auth': str(request.auth),  # None
-    }
-    return Response(content)
-
-
-
-#@api_view(['GET'])
-#def api_authentication (request, slug):
-
-#    try:
-#        authentication = Authentification.objects.get(slug=slug)
-#    except Authentification.DoesnotExist:
-#        return Response(status=status.HTTP_404_NOT_FOUND)
-
-#    if request.method=='GET':
-#         serializer = Authentification(authentication)
-#         return Response(serializer.data)
-
-
-
 @csrf_exempt
 def authentificationApi(request,id=0):
     if request.method=='GET':

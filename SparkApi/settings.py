@@ -78,7 +78,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'SparkApi.urls'
+#ROOT_URLCONF = 'SparkApi.urls'
+
+ROOT_URLCONF = 'SparkApp.urls'
 
 # Template configuration
 # https://docs.djangoproject.com/en/2.1/topics/templates/

@@ -23,13 +23,14 @@ from django.conf.urls import url,include
 
 from rest_framework.authtoken import views
 
-#from SparkApp.views import CreateCheckoutSession
+from SparkApp import urls
+from SparkApp.views import *
+
 
 urlpatterns = [
     # Uncomment the next line to enable the admin:
-    #path('admin/', admin.site.urls)
     path('admin/', admin.site.urls),
-    #path('create-checkout-session', CreateCheckoutSession.as_view(), name='create-checkout-session'),
-    url(r'^', include('SparkApp.urls')),
+  
+    url('', include('SparkApp.urls')),
     path('api-token-auth/', views.obtain_auth_token, name='api-token-auth'),
 ]

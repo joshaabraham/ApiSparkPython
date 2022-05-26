@@ -4,3 +4,4 @@ from .authentication_srl import AuthentificationSerializer
 from .ActorSerializers import *
 from .UserOrientedRelations_srl import *
 from .SparkUser_srlz import *
+from .User_srlz import *

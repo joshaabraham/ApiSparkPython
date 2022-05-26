@@ -14,47 +14,38 @@ from django.dispatch import receiver
 from rest_framework.authtoken.models import Token
 
 
-@api_view(['POST,'])
-def authentificationRegister(request):
 
+#@csrf_exempt
+@api_view(['POST'])
+def authentificationRegister(request):
     if request.method == 'POST':
-        serializer = SparkUserSerializer(data=request.data)
+        auth_data=JSONParser().parse(request)
+        auth_serializer = SparkUserSerializer(data=auth_data, partial=True)
+
+        #serializer = SparkUserSerializer(data=request.body, partial=True)
+        #data = JSONParser().parse(serializer)
         data={}
-        if serializer.is_valid():
-            sparkUser = serializer.save()
+        if auth_serializer.is_valid():
+            sparkUser = auth_serializer.save()
             data['response'] = "Successfully registered a new user."
             data['email'] = sparkUser.email
-            data['username'] = sparkUser.username
+            token = Token.objects.get(user=sparkUser).key
+            data['token'] = token
         else:
-            data = serializer.errors
+            data = auth_serializer.errors
         return Response[data]
 
 
-
-#@csrf_exempt
-#def authentificationRegister(request,id=0):
-#      auth_data=JSONParser().parse(request)
-#      auth_serializer = SparkUserSerializer(data=auth_data)
-#      if auth_serializer.is_valid():
-#            auth_serializer.save()
-#            try:
-#                post_save.connect(authentificationRegister, sender=SparkUser)
-#                return JsonResponse("Registered Successfully!!" , safe=False)
-#            except:
-#                print("An exception occurred") 
-#                return JsonResponse("Failed to Register.",safe=False) 
-
-
-
-#@csrf_exempt
-#def authentificationLogin(request,id=0):
-#      auth_data=JSONParser().parse(request)
-#      auth_serializer = SparkUserSerializer(data=auth_data)
-#      if auth_serializer.is_valid():
-#            auth_serializer.save()
-#            post_save.connect(authentificationLogin, sender=SparkUser)
-#            return JsonResponse("Registered Successfully!!" , safe=False)
-#      return JsonResponse("Failed to Register.",safe=False)
+@api_view(['POST'])
+def authentificationLogin(request,id=0):
+     if request.method == 'POST':
+      auth_data=JSONParser().parse(request)
+      auth_serializer = SparkUserSerializer(data=auth_data)
+      if auth_serializer.is_valid():
+            auth_serializer.save()
+            post_save.connect(authentificationLogin, sender=SparkUser)
+            return JsonResponse("Registered Successfully!!" , safe=False)
+      return JsonResponse("Failed to Register.",safe=False)
 
 
 
